@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Neue Haas Grotesk Text Pro";
+    user-select: none;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h2 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+
+section {
+    height: 45vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 40px;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+button {
+    background-color: #ffffff92;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: all ease 0.1s;
+}
+
+button:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.1vw;
+    margin-top: 6vh;
+}
+
+section h2 span {
+    font-size: 1.4vw;
+}
+
+.copyCode {
+    font-size: 1.8vw;
+    border-left: 2px solid #fff;
+    padding: 8px 12px;
+    background-color: #ffffff33;
+}
+
+.copyCode:hover {
+    cursor: copy;
+}
+
+@media(max-width: 500px) {
+    #h2 {
+        font-size: 4.5vw;
+    }
+    section {
+        height: 50vh;
+        width: 85vw;
+    }
+    button {
+        font-size: 3.2vw;
+    }
+    section h2 {
+        font-size: 4vw;
+    }
+    section h2 span {
+        font-size: 6vw;
+    }
+    .copyCode {
+        font-size: 4.5vw;
+        font-weight: 550;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 540px) {
+    #h2 {
+        font-size: 4vw;
+    }
+    section {
+        height: 50vh;
+        width: 75vw; 
+    }
+    button {
+        font-size: 3.2vw;
+        padding: 18px 35px;
+    }
+    section h2 {
+        font-size: 3.5vw;
+    }
+    section h2 span {
+        font-size: 4.5vw;
+    }
+    .copyCode {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+}
+
+@media(min-width: 541px) and (max-width: 1024px) {
+    #h2 {
+        font-size: 4vw;
+    }
+    section {
+        height: 50vh;
+        width: 75vw; 
+    }
+    button {
+        font-size: 3.2vw;
+        padding: 25px 70px;
+    }
+    section h2 {
+        font-size: 3.5vw;
+    }
+    section h2 span {
+        font-size: 4.5vw;
+    }
+    .copyCode {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+}
